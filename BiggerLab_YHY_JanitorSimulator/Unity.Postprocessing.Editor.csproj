@@ -5,16 +5,16 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{65ED2304-E3C4-40C5-6E5B-6937E6B603ED}</ProjectGuid>
+    <ProjectGuid>{CBEC4DCB-1B2B-E03B-0387-393C59967E8B}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Unity.Postprocessing.Editor</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2018.2.16f1</UnityVersion>
     <RootNamespace></RootNamespace>
@@ -148,6 +148,9 @@
     <Reference Include="Managed/UnityEngine/UnityEngine.SharedInternalsModule">
       <HintPath>F:\Unity2018.2.16f1\Editor\Data\Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
     </Reference>
+    <Reference Include="Managed/UnityEngine/UnityEngine.SpatialTrackingModule">
+      <HintPath>F:\Unity2018.2.16f1\Editor\Data\Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
+    </Reference>
     <Reference Include="Managed/UnityEngine/UnityEngine.SpriteMaskModule">
       <HintPath>F:\Unity2018.2.16f1\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
     </Reference>
@@ -238,80 +241,127 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>F:/Unity2018.2.16f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>F:/Unity2018.2.16f1/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Timeline">
       <HintPath>F:/Unity2018.2.16f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Timeline">
+      <HintPath>F:/Unity2018.2.16f1/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>F:/Unity2018.2.16f1/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>F:/Unity2018.2.16f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>F:/Unity2018.2.16f1/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GoogleAudioSpatializer">
+      <HintPath>F:/Unity2018.2.16f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.GoogleAudioSpatializer">
       <HintPath>F:/Unity2018.2.16f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.HoloLens">
+      <HintPath>F:/Unity2018.2.16f1/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>F:/Unity2018.2.16f1/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>F:/Unity2018.2.16f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>F:/Unity2018.2.16f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>F:/Unity2018.2.16f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>F:/Unity2018.2.16f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>F:/Unity2018.2.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>F:/Unity2018.2.16f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
     <Reference Include="mscorlib">
-      <HintPath>F:\Unity2018.2.16f1\Editor\Data\MonoBleedingEdge\lib\mono\unity\mscorlib.dll</HintPath>
+      <HintPath>F:\Unity2018.2.16f1\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>F:\Unity2018.2.16f1\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.dll</HintPath>
+      <HintPath>F:\Unity2018.2.16f1\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core">
-      <HintPath>F:\Unity2018.2.16f1\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Core.dll</HintPath>
+      <HintPath>F:\Unity2018.2.16f1\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization">
-      <HintPath>F:\Unity2018.2.16f1\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Runtime.Serialization.dll</HintPath>
+      <HintPath>F:\Unity2018.2.16f1\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Runtime.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml">
-      <HintPath>F:\Unity2018.2.16f1\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Xml.dll</HintPath>
+      <HintPath>F:\Unity2018.2.16f1\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq">
-      <HintPath>F:\Unity2018.2.16f1\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Xml.Linq.dll</HintPath>
+      <HintPath>F:\Unity2018.2.16f1\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.Linq.dll</HintPath>
     </Reference>
     <Reference Include="UnityScript">
-      <HintPath>F:\Unity2018.2.16f1\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.dll</HintPath>
+      <HintPath>F:\Unity2018.2.16f1\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.dll</HintPath>
     </Reference>
     <Reference Include="UnityScript.Lang">
-      <HintPath>F:\Unity2018.2.16f1\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.Lang.dll</HintPath>
+      <HintPath>F:\Unity2018.2.16f1\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Boo.Lang">
-      <HintPath>F:\Unity2018.2.16f1\Editor\Data\MonoBleedingEdge\lib\mono\unity\Boo.Lang.dll</HintPath>
+      <HintPath>F:\Unity2018.2.16f1\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\Boo.Lang.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="BiggerLab_YHY_JanitorSimulator.Plugins.csproj">
-      <Project>{690BC775-429E-F5A2-FBF3-FF03EA6878E8}</Project>
-      <Name>BiggerLab_YHY_JanitorSimulator.Plugins</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.PackageManagerUI.Editor.csproj">
-      <Project>{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}</Project>
-      <Name>Unity.PackageManagerUI.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
-      <Project>{CBEC4DCB-1B2B-E03B-0387-393C59967E8B}</Project>
-      <Name>Unity.Postprocessing.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
       <Project>{49FCAFB7-7D0A-B3F6-2171-B4248A94EC21}</Project>
       <Name>Unity.Postprocessing.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Classroom\Image Effects\anm_tex_01.cs" />
-    <Compile Include="Assets\FPCivilianArms\FPCivilianArmsScript.cs" />
-    <Compile Include="Assets\FriendlyCleanUI\scripts\ButtonAnimator.cs" />
-    <Compile Include="Assets\MyAssets\Scripts\Test.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Attributes\DecoratorAttribute.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Attributes\PostProcessEditorAttribute.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\BaseEditor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Decorators\AttributeDecorator.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Decorators\Decorators.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Decorators\TrackballDecorator.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\EffectListEditor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Effects\AmbientOcclusionEditor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Effects\AutoExposureEditor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Effects\BloomEditor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Effects\ChromaticAberrationEditor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Effects\ColorGradingEditor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Effects\DefaultPostProcessEffectEditor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Effects\DepthOfFieldEditor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Effects\LensDistortionEditor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Effects\ScreenSpaceReflectionsEditor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Effects\VignetteEditor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\PostProcessDebugEditor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\PostProcessEffectBaseEditor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\PostProcessEffectEditor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\PostProcessLayerEditor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\PostProcessProfileEditor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\PostProcessVolumeEditor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Tools\CubeLutAssetFactory.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Tools\CubeLutAssetImporter.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Tools\DefineSetter.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Tools\ProfileFactory.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Tools\ResourceAssetFactory.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Tools\VolumeFactory.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Utils\CurveEditor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Utils\EditorUtilities.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Utils\GlobalSettings.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Utils\PostProcessShaderIncludePath.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Utils\SerializedParameterOverride.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Editor\Utils\Styling.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Classroom\Image Effects\Shaders\StandardCullOff.shader" />
