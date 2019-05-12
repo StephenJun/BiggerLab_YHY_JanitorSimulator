@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
   - {fileID: 114904428404533370}
-  - {fileID: 114784151865597882}
---- !u!114 &114784151865597882
+  - {fileID: 114642959144701312}
+--- !u!114 &114642959144701312
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30,14 +30,14 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   gradingMode:
-    overrideState: 0
-    value: 1
+    overrideState: 1
+    value: 0
   externalLut:
     overrideState: 0
     value: {fileID: 0}
     defaultState: 1
   tonemapper:
-    overrideState: 1
+    overrideState: 0
     value: 0
   toneCurveToeStrength:
     overrideState: 0
@@ -89,13 +89,13 @@ MonoBehaviour:
     overrideState: 0
     value: 0
   mixerRedOutRedIn:
-    overrideState: 1
+    overrideState: 0
     value: 100
   mixerRedOutGreenIn:
-    overrideState: 1
+    overrideState: 0
     value: 0
   mixerRedOutBlueIn:
-    overrideState: 1
+    overrideState: 0
     value: 0
   mixerGreenOutRedIn:
     overrideState: 0
@@ -116,14 +116,14 @@ MonoBehaviour:
     overrideState: 0
     value: 100
   lift:
-    overrideState: 1
-    value: {x: 1, y: 0.5300837, z: 0.5455504, w: 0}
+    overrideState: 0
+    value: {x: 1, y: 1, z: 1, w: 0}
   gamma:
-    overrideState: 1
-    value: {x: 1, y: 0.39503372, z: 0.21151412, w: 0}
+    overrideState: 0
+    value: {x: 1, y: 1, z: 1, w: 0}
   gain:
-    overrideState: 1
-    value: {x: 1, y: 0.8014332, z: 0, w: 0}
+    overrideState: 0
+    value: {x: 1, y: 1, z: 1, w: 0}
   masterCurve:
     overrideState: 0
     value:
@@ -1340,26 +1340,26 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   intensity:
-    overrideState: 1
-    value: 44.41
+    overrideState: 0
+    value: 1000
   threshold:
-    overrideState: 1
-    value: 1
+    overrideState: 0
+    value: 1728.7
   softKnee:
-    overrideState: 1
-    value: 0.5
+    overrideState: 0
+    value: 1
   clamp:
-    overrideState: 1
-    value: 65472
+    overrideState: 0
+    value: 0
   diffusion:
-    overrideState: 1
+    overrideState: 0
     value: 10
   anamorphicRatio:
-    overrideState: 1
+    overrideState: 0
     value: -0.22
   color:
     overrideState: 1
-    value: {r: 0, g: 0.057794094, b: 1, a: 1}
+    value: {r: 0.8225136, g: 0, b: 1, a: 1}
   fastMode:
     overrideState: 1
     value: 0

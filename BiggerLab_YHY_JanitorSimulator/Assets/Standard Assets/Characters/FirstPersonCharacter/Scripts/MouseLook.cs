@@ -12,8 +12,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public bool clampVerticalRotation = true;
         public float MinimumX = -90F;
         public float MaximumX = 90F;
-        public bool smooth;
-        public float smoothTime = 5f;
+        public bool smooth; //是否平滑移动
+        public float smoothTime = 5f; // 平滑的速度
         public bool lockCursor = true;
 
 
@@ -102,11 +102,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
             q.z /= q.w;
             q.w = 1.0f;
 
-            float angleX = 2.0f * Mathf.Rad2Deg * Mathf.Atan (q.x);
+            float angleX = 2.0f * Mathf.Rad2Deg * Mathf.Atan (q.x); //Mathf.Atan() ：正切函数
 
-            angleX = Mathf.Clamp (angleX, MinimumX, MaximumX);
+            angleX = Mathf.Clamp (angleX, MinimumX, MaximumX);//Mathf.Rad2Deg = (PI * 2) / 360
 
-            q.x = Mathf.Tan (0.5f * Mathf.Deg2Rad * angleX);
+            q.x = Mathf.Tan (0.5f * Mathf.Deg2Rad * angleX); 
 
             return q;
         }
